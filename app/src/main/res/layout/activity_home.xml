@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.widget.RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        tools:context="com.tryme.mes.tryme.ui.Home">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/todo_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/iv_empty_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/icon"
+                android:contentDescription="app icon"/>
+
+            <TextView
+                android:id="@+id/tv_empty_main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Hi 👋 "
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_empty_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:gravity="end"
+                    android:text="Unsuccessful ☹"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_empty_secondary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:gravity="center_horizontal"
+                    android:text="Successful 🏆"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:paddingStart="10dp"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp">
+                <TextView
+                    android:id="@+id/tv_unsuccessful_score_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:text="40%"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:paddingEnd="5dp"/>
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/unsuccessful_score" />
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/successful_score" />
+                <TextView
+                    android:id="@+id/tv_successful_score_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:text="60%"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+                <TextView
+                    android:id="@+id/tv_best_category_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:gravity="end"
+                    android:text="Best Category:"
+                    android:paddingEnd="10dp"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_best_category_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:gravity="center_horizontal"
+                    android:text="Technology"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:paddingStart="10dp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+                <TextView
+                    android:id="@+id/tv_suggest_category_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:gravity="end"
+                    android:text="Suggested Category:"
+                    android:paddingEnd="10dp"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_suggest_category_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-regular"
+                    android:gravity="center_horizontal"
+                    android:text="Love"
+                    android:textColor="@color/orangeLite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:paddingStart="10dp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_start_try"
+        android:background="@color/orangeLite"
+        android:src="@drawable/ic_add_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+
+        app:backgroundTint="@color/orangeLite"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        />
+
+
+    </android.widget.RelativeLayout>
